@@ -1,8 +1,8 @@
 {
-  "name": "angular-schema-form-tinymce",
+  "name": "angular-schema-form-callout",
   "description": "Bootstrap callout add-on for angular schema form.",
   "main": [
-    "dist/bootstrap-tinymce.min.js",
+    "dist/bootstrap-callout.min.js",
     "dist/callout.min.css"
   ],
   "version": "0.0.1",
