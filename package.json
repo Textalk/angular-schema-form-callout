@@ -1,7 +1,6 @@
 {
-  "name": "angular-schema-form-tinymce",
-  "version": "0.1.0",
-  "description": "Tinymce add-on for schema form",
+  "name": "angular-schema-form-callout",
+  "version": "0.0.1",
   "scripts": {
     "test": "rm -fr coverage && ./node_modules/karma/bin/karma start --single-run --browsers PhantomJS karma.conf.js"
   },
