@@ -36,7 +36,7 @@ Options
 | title   |   Sets title inside callout   |
 | description | Sets description below title |
 | items | A form definition, i.e. an array of subcomponents |
-| type  | What flavor of callout should it be, ie. the `bs-callout-*` class. Possible values are: 'default', 'primary','success','info', 'warning' and 'danger'. It defaults to (duh!) 'default'. |
+| style  | What flavor of callout should it be, ie. the `bs-callout-*` class. Possible values are: 'default', 'primary','success','info', 'warning' and 'danger'. It defaults to (duh!) 'default'. |
 | inline | set to 'true' to wrap the items in a bootstrap column and pull it right, this looks best if you keep it to just one item and remove that items title. |
 
 
@@ -48,7 +48,7 @@ var form = [
   type: "callout",
   title: "Name",
   description: "Your name please.",
-  type: "info",
+  style: "info",
   inline: true,
   items: [
     {
