@@ -2,7 +2,7 @@ Bootstrap Callout Add-On
 =========================
 
 Bootstrap Callouts are nice, aren't they? They are actually not officially included in
-Bootstrap but are used the docs, and some lovely people on the interweb has us covered.
+Bootstrap but are used in the docs, and some lovely people on the interweb has us covered.
 
 http://cpratt.co/twitter-bootstrap-callout-css-styles/
 
