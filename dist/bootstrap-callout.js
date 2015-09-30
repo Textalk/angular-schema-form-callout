@@ -2,26 +2,6 @@ angular.module('schemaFormCallout', ['schemaForm']).config(
 ['schemaFormProvider', 'schemaFormDecoratorsProvider', 'sfBuilderProvider',
   function(schemaFormProvider, schemaFormDecoratorsProvider, sfBuilderProvider) {
 
-    var transclusion = function(args) {
-      var transclusions = args.fieldFrag.querySelectorAll('[sf-field-transclude]');
-
-      if (transclusions.length) {
-        for (var i = 0; i < transclusions.length; i++) {
-          var n = transclusions[i];
-
-          // The sf-transclude attribute is not a directive,
-          // but has the name of what we're supposed to
-          // traverse.
-          var sub = n.getAttribute('sf-field-transclude') || 'items';
-          var items = args.form[sub];
-          //Array.isArray(sub) ? sub : [sub];
-          if (items) {
-            var childFrag = args.build(items, args.path + '.' + sub, args.state);
-            n.appendChild(childFrag);
-          }
-        }
-      }
-    };
     //Add a mapping for the type 'callout'
     schemaFormDecoratorsProvider.defineAddOn(
       'bootstrapDecorator',
@@ -31,8 +11,7 @@ angular.module('schemaFormCallout', ['schemaForm']).config(
         sfBuilderProvider.builders.sfField,
         sfBuilderProvider.builders.ngModelOptions,
         sfBuilderProvider.builders.condition,
-        //sfBuilderProvider.builders.transclusion
-        transclusion
+        sfBuilderProvider.builders.transclusion
       ]
     );
 
