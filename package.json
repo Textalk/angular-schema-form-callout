@@ -1,6 +1,6 @@
 {
   "name": "angular-schema-form-callout",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "scripts": {
     "test": "rm -fr coverage && ./node_modules/karma/bin/karma start --single-run --browsers PhantomJS karma.conf.js"
   },
