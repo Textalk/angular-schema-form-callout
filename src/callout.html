@@ -6,9 +6,7 @@
          ng-bind-html="form.description"></p>
     </div>
     <div ng-class="{'col-xs-6': form.inline, 'schema-form-callout-fields': !form.inline}">
-      <div ng-class="{'pull-right': form.inline}">
-        <sf-decorator ng-repeat="item in form.items" form="item"></sf-decorator>
-      </div>
+      <div ng-class="{'pull-right': form.inline}" sf-field-transclude="items"></div>
     </div>
   </div>
 </div>
