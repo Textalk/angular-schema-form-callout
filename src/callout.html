@@ -1,4 +1,4 @@
-<div class="clearfix bs-callout bs-callout-{{form.style || 'default'}} schema-form-callout" ng-disabled="form.readonly">
+<div class="clearfix bs-callout bs-callout-{{form.style || 'default'}} schema-form-callout {{form.htmlClass}}" ng-disabled="form.readonly">
   <div ng-class="{'row': form.inline, 'form-inline': form.inline}">
     <div ng-class="{'col-xs-6': form.inline }">
       <h4 ng-show="showTitle()" ng-bind="form.title"></h4>
